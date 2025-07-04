@@ -1,0 +1,65 @@
+.form-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: hsl(216, 94%, 14%);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px hsla(255, 98%, 53%, 0.15);
+  padding: 1rem 2rem;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #e1c0da;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #1abc9c;
+  outline: none;
+}
+
+.save-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: hsl(166, 11%, 62%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.save-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(26, 188, 156, 0.4);
+}
